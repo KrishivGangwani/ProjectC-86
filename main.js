@@ -3,7 +3,7 @@ var canvas = new fabric.Canvas('myCanvas');
 
 function new_image()
 {
-	fabric.image.fromURL('BirthdayImage.jpg',function(Img){
+	fabric.Image.fromURL('Birthdayimage.jpg',function(Img){
     block_img_object = Img;
 
     block_img_object.scaleToWidth(700);
@@ -11,12 +11,12 @@ function new_image()
     block_img_object.set({
         top:0,
         left:0
-    })
+    });
     canvas.add(block_img_object);
-    })
+    });
 	
 }
 
-function playSound(){
+function playsound(){
 	x.play();
 }
